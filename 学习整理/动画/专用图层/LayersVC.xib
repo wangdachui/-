@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LayersVC">
+            <connections>
+                <outlet property="replicatorLayerView" destination="qDz-rS-n6X" id="MkS-Xq-g8m"/>
+                <outlet property="shapeLayerView" destination="fJT-Dt-A9Y" id="JYO-kx-DL9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-Dt-A9Y">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="H8k-YY-A99"/>
+                        <constraint firstAttribute="width" constant="100" id="oD3-Hj-kWg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDz-rS-n6X" customClass="ReflectionView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-Bi-gdq"/>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="177" id="0t4-XH-TZG"/>
+                        <constraint firstAttribute="trailing" secondItem="cdv-Bi-gdq" secondAttribute="trailing" id="3VQ-ZB-ADN"/>
+                        <constraint firstAttribute="bottom" secondItem="cdv-Bi-gdq" secondAttribute="bottom" id="Kl5-Cr-g6b"/>
+                        <constraint firstAttribute="width" constant="240" id="Qh5-ki-WxA"/>
+                        <constraint firstItem="cdv-Bi-gdq" firstAttribute="leading" secondItem="qDz-rS-n6X" secondAttribute="leading" id="U7w-nM-o3e"/>
+                        <constraint firstItem="cdv-Bi-gdq" firstAttribute="top" secondItem="qDz-rS-n6X" secondAttribute="top" id="vRi-aS-9pE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z86-Iu-dAX" customClass="ScrollView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="fXl-EO-dy0"/>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.63003700659999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="0ZM-i6-2qf"/>
+                        <constraint firstAttribute="bottom" secondItem="fXl-EO-dy0" secondAttribute="bottom" id="NiZ-bl-euk"/>
+                        <constraint firstItem="fXl-EO-dy0" firstAttribute="leading" secondItem="z86-Iu-dAX" secondAttribute="leading" id="Zey-kj-pci"/>
+                        <constraint firstAttribute="trailing" secondItem="fXl-EO-dy0" secondAttribute="trailing" id="hx3-8A-JFu"/>
+                        <constraint firstItem="fXl-EO-dy0" firstAttribute="top" secondItem="z86-Iu-dAX" secondAttribute="top" id="hzY-G6-hWc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qDz-rS-n6X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5rO-WT-g0k"/>
+                <constraint firstAttribute="trailing" secondItem="z86-Iu-dAX" secondAttribute="trailing" id="VoW-Vv-eIA"/>
+                <constraint firstItem="qDz-rS-n6X" firstAttribute="top" secondItem="fJT-Dt-A9Y" secondAttribute="bottom" constant="30" id="jye-nu-y3w"/>
+                <constraint firstItem="fJT-Dt-A9Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lW4-ux-4qa"/>
+                <constraint firstItem="fJT-Dt-A9Y" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oLk-g1-d0v"/>
+                <constraint firstAttribute="bottom" secondItem="z86-Iu-dAX" secondAttribute="bottom" id="yDF-CH-Ifi"/>
+                <constraint firstItem="z86-Iu-dAX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z6E-Wl-Fmk"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_1024.png" width="1024" height="1024"/>
+    </resources>
+</document>
